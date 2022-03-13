@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*手機跟屁蟲*/
+.mmmm_xxxx { display: none; }
+.Area { z-index: 1; position: relative; margin: 0 auto; padding: 0; border-radius: 0; text-align: center; }
+.Area_hammerAD { z-index: 300; display: none; position: fixed; bottom: 0; right: 0; transform: translate3d(0, 200px, 0); /*background-color: rgba(0,0,0,0.5);*/ }
+.Area_hammerAD .box { position: relative; margin-right: 10px; opacity: 1; }
+.Area_hammerAD img { width: 100%; height: auto; }
+.Area_hammerAD .closeButton a { display: block; cursor: pointer; position: absolute; width: 20px; height: 20px; border-radius: 50%; font: bold 20px/1em "Century Gothic"; color: #FFF; text-align: center; background-color: rgba(0%,0%,0%,0.5); text-decoration: none; z-index: 2 }
+ @media screen and (min-width:641px) {
+.Area_hammerAD { display: none; width: 90px; }
+.Area_hammerAD .closeButton a { top: 0; right: 0; }
+}
+ @media screen and (max-width:640px) {
+.Area_hammerAD { display: block; width: 22%; }
+.Area_hammerAD .closeButton a { top: 1vw; right: 1vw; }
+}
+
